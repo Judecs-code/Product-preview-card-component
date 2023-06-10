@@ -1,0 +1,100 @@
+.container {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.project-body {
+  background-color: #f2ebe3;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 7vw);
+  margin: 50px, 70px; }
+
+.perfum-container {
+  grid-row: 2/5;
+  grid-column: 3/6;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 20px; }
+
+.perfum-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column: 1/2;
+  grid-row: 1/-1; }
+
+.perfum-details {
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  background-color: white; }
+  .perfum-details_preview {
+    margin: 0;
+    padding-top: 17px;
+    padding-left: 20px;
+    color: #6c7289;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 3px; }
+  .perfum-details_heading {
+    padding-left: 20px;
+    margin-top: 10px;
+    line-height: 1;
+    color: #1c232b; }
+  .perfum-details_paragraph {
+    font-size: 13px;
+    color: #6c7289;
+    line-height: 1;
+    padding: 0 20px;
+    margin: 0; }
+  .perfum-details_span {
+    padding: 0 20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center; }
+    .perfum-details_span-unlined {
+      font-size: 25px;
+      margin-right: 10px;
+      font-weight: 700;
+      color: #3c8067; }
+    .perfum-details_span-lined {
+      color: #6c7289;
+      font-weight: 500;
+      text-decoration: line-through; }
+  .perfum-details_button {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    border-radius: 7px;
+    padding: 8px 0;
+    font-size: 11px;
+    background-color: #3c8067;
+    color: white;
+    border: none; }
+    .perfum-details_button:hover {
+      opacity: 0.8; }
+    .perfum-details_button__svg {
+      padding-right: 15px; }
+
+.attribution {
+  margin: 10px;
+  grid-column: 3/6;
+  grid-row: 5/6;
+  align-self: center;
+  font-size: 15px; }
+  .attribution-link {
+    text-decoration: none; }
+    .attribution-link:hover {
+      opacity: 0.8; }
